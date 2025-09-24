@@ -1,3 +1,4 @@
+# Test commit
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -8,7 +9,8 @@ cities = {
     "Medellín": [40, 36, 16, 8],
     "Barranquilla": [45, 38, 12, 5],
     "Pereira": [48, 39, 10, 3]
-}
+}re(figsize=(8, 5))
+    
 
 # Labels for the x-axis of the chart
 mw_labels = ["<1 MW", "1-2 MW", "2-4 MW", ">4 MW"]
@@ -17,8 +19,7 @@ x_pos = np.arange(len(mw_labels))
 # Loop through each city in our data dictionary
 for city, data in cities.items():
     # Create a new figure for each chart to keep them separate
-    plt.figure(figsize=(8, 5))
-    
+    plt.figu
     # Create the bar chart
     plt.bar(x_pos, data, color='skyblue')
     
